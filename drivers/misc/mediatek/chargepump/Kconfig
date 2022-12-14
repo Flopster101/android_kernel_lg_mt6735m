@@ -1,0 +1,16 @@
+
+config LEDS_LM3632
+         bool "LM3632 LED"
+        default n
+
+config LEDS_LM3639
+        bool "LM3639 Support"
+        default n
+
+config LEDS_RT8542
+        bool "RT8542 Support"
+        default n
+
+config LEDS_RT4832
+        bool "RT4832 Support"
+        default n

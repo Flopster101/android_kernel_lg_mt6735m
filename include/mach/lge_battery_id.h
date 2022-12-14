@@ -1,0 +1,23 @@
+#ifndef __LGE_BATTERY_ID_H__
+#define __LGE_BATTERY_ID_H__
+
+typedef enum {
+	BATT_ID_UNKNOWN = 0,
+	BATT_ID_DS2704_N,
+	BATT_ID_DS2704_L,
+	BATT_ID_DS2704_C,
+	BATT_ID_ISL6296_N,
+	BATT_ID_ISL6296_L,
+	BATT_ID_ISL6296_C,
+	BATT_ID_RA4301_VC0,
+	BATT_ID_RA4301_VC1,
+	BATT_ID_RA4301_VC2,
+	BATT_ID_SW3800_VC0,
+	BATT_ID_SW3800_VC1,
+	BATT_ID_SW3800_VC2,
+	BATT_ID_MAX,
+} BATT_ID;
+
+BATT_ID lge_get_battery_id(void);
+char* lge_get_battery_id_str(void);
+#endif
